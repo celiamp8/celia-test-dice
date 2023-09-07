@@ -73,7 +73,7 @@ Due to the nature of the test as a technical task and due to time constraints, t
 * Encrypt all email-password values and pass them as parameters. Ideally, this could be done in the pipeline to 1. run the same tests in different environments with different values and 2. to avoid having sensitive data (encrypted or not) in the codebase.
 * Separate Given/When/Then steps into different files. Not really an issue for this single scenario but would be best to do it for a larger framework.
 * Save different event details in json files instead of an object in the steps file.
-* Increase the number of data checks, especially for the event details page (after event *Save*, before *Submit*). Currently the tests only check that the name is valid but ideally we should check for all of the values we've input in the event creation form.
+* Increase the number of data checks, especially for the event details page (after event *Save*, before *Submit*). Currently the tests only check that the name is correct but ideally we should check for all of the values we've input in the event creation form.
 * Selectors: A lot of the selectors used are based on the placeholder text. I found during implementation that these worked best for the Playwright framework, and they do serve a double functionality in testing that the placeholder hasn't changed from its expected value. However, I would prefer to use test-data or a similar attribute when possible. 
 * Create Types for `Event`, `MIOUser` and `FanUser`. Currently to keep things simple I've left them as `type any` but ideally they should be defined types, especially for a larger framework with higher amounts of data.
 * Use the `After` hook to hit the API endpoint to delete any events generated in the test.
