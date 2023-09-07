@@ -1,0 +1,79 @@
+[
+  {
+    "description": "  As a MIO user\n  I want to be able to create an event\n  As a Fan user\n  I want to be able to book a ticket for the new event",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-the-creation-and-booking-of-an-event;a-fan-user-can-purchase-a-ticket-for-an-event-created-by-a-mio-user",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "A Fan user can purchase a ticket for an event created by a MIO user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1784669812
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I create the \"eventWith2TicketTypes\" event as a MIO user",
+            "match": {
+              "location": "e2e-cucumber/support/steps/event.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25685790562
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I purchase a \"VIP\" ticket of the \"eventWith2TicketTypes\" event as a Fan user",
+            "match": {
+              "location": "e2e-cucumber/support/steps/event.steps.ts:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31258403557
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the purchase confirmation for the \"VIP\" ticket of the \"eventWith2TicketTypes\" event should be displayed",
+            "match": {
+              "location": "e2e-cucumber/support/steps/event.steps.ts:139"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3043805786
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 222339738
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-the-creation-and-booking-of-an-event",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test the creation and booking of an event",
+    "tags": [],
+    "uri": "e2e-cucumber/features/event.feature"
+  }
+]

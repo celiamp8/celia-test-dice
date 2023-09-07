@@ -1,0 +1,24 @@
+{
+  "default": {
+    "paths": [
+      "e2e-cucumber/features/**/*.feature"
+    ],
+    "requireModule": [
+      "ts-node/register"
+    ],
+    "require": [
+      "e2e-cucumber/support/**/*.ts"
+    ],
+    "publishQuiet": true,
+    "parallel": 3,
+    "format": [
+      "@cucumber/pretty-formatter",
+      "json:e2e-cucumber/reports/cucumber-report.json",
+      "html:e2e-cucumber/reports/cucumber-report.html"
+    ],
+    "snippetInterface": "async-await",
+    "worldParameters": {
+      "wikipedia_homepage": "https://www.wikipedia.org/"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "celia-test-dice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.5.1",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.37.1",
+    "@types/node": "^20.5.9",
+    "playwright": "^1.37.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "e2e:cucumber": "cucumber-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}
